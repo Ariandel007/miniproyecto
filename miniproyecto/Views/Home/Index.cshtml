@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">MiniProyecto</h1>
+
+        <div id="albumMenuId">
+            <form>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label>Albumes</label>
+                    </div>
+                    <a id="albumButton" onclick="goToAlbum()" class="btn btn-success text-white" style="cursor:pointer">
+                        Visualizar Album
+                    </a>
+                    <div class="col-4">
+                        <select id="contentAlbum" class="form-control">
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="p-4 border rounded">
+            <table id="tblDatos" class="table table-striped table-bordered" style="width: 100%">
+                <thead class="thead-dark">
+                    <tr class="table-info">
+                        <th>Titulo </th>
+                        <th>URL</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="commentSection" class="col-8">
+
+            </div>
+
+        </div>
+    </div>
+@section Scripts{
+    <script src="~/js/album.js"></script>
+
+}
